@@ -1,0 +1,21 @@
+#bookswrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#bookswrapper .view-version-comparator-book {
+    margin: 0 1em 0 0;
+    border: 2px black solid;
+    border-radius: 2px;
+    flex: 0 1 100%;
+}
+#bookswrapper .views-row {
+    padding: 1em .6em 2em;
+    align-self: flex-start;
+}
+#bookswrapper .views-field-version-comparator-text {
+    white-space: pre-line;
+}
+#bookswrapper .views-field-title {
+    font-weight: bold;
+}

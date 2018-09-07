@@ -65,6 +65,12 @@ variable_set('comparator_content_type', 'vc_section');
 //    return system_settings_form($form);
 //}
 
+function version_comparator_views_api() {
+    return array(
+        'api' => 3
+    );
+}
+
 
 
 

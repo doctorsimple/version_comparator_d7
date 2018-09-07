@@ -21,7 +21,7 @@ Drupal.behaviors.versionComparator = {
                         $bookswrapper.append(viewHtml);
                         //adjust widths
                         var bookscount = jQuery('.view-ttc-book').length;
-                        $bookswrapper.find('.view-ttc-book').css('max-width', ((99-bookscount)/ bookscount) + '%' )
+                        $bookswrapper.find('.view-version-comparator-book')
                         //Adjust row heights
                             .last().find('.views-row').each( function(i){
                             $this = jQuery(this);
