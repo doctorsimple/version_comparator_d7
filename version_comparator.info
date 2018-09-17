@@ -7,6 +7,7 @@ core = 7.x
 configure = admin/config/content/comparator
 
 dependencies[] = views
+dependencies[] =  libraries
 
 stylesheets[all][] = version_comparator.css
 

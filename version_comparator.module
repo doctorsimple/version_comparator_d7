@@ -19,6 +19,12 @@ function version_comparator_block_info() {
     return $blocks;
 }
 
+function version_comparator_preprocess_block(&$variables) {
+    if ($path = libraries_get_path('jquery-match-height-master')) {
+        drupal_add_js($path . '/jquery.matchHeight.js');
+    }
+}
+
 function version_comparator_block_view($delta = '') {
     $result = db_query("SELECT DISTINCT version_comparator_translator_value from field_data_version_comparator_translator WHERE bundle=:contenttype", array (':contenttype' => variable_get('comparator_content_type')));
     $listoftranslators = array();

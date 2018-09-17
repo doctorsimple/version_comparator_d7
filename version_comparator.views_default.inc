@@ -30,7 +30,7 @@ $handler->display->display_options['title'] = '<none>';
     $handler->display->display_options['header']['area']['id'] = 'area';
     $handler->display->display_options['header']['area']['table'] = 'views';
     $handler->display->display_options['header']['area']['field'] = 'area';
-    $handler->display->display_options['header']['area']['content'] = '<div class="vc-book-header">%1</div>';
+    $handler->display->display_options['header']['area']['content'] = '<div class="vc-book-header"><span class="translator-name">%1</span></div>';
     $handler->display->display_options['header']['area']['format'] = 'full_html';
     $handler->display->display_options['header']['area']['tokenize'] = TRUE;
     /* Field: Content: Title */
