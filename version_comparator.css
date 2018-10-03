@@ -1,3 +1,11 @@
+#selectbuttonswrapper {
+    margin-bottom : .3em;
+}
+
+#selectbuttonswrapper button.translator-select {
+    border: 3px solid background: rgb(227,236,207);
+}
+
 #bookswrapper {
     display: flex;
     justify-content: space-between;

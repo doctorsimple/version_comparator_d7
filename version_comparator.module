@@ -31,13 +31,19 @@ function version_comparator_block_view($delta = '') {
     while ($r = $result->fetchAssoc()) {
         $listoftranslators[] = $r['version_comparator_translator_value'];
     }
-    $options = implode('</option><option>', $listoftranslators);
+    //$options = implode('</option><option>', $listoftranslators);
+    $buttons = [];
+    foreach ($listoftranslators as $translator) {
+        array_push($buttons, '<button class="btn btn-default translator-select" value="'. $translator . '"> '. $translator .'  </button>');
+    }
+
 
     switch ($delta) {
         case 'comparator' :
             $block['content'] = array(
               '#type' => 'markup',
-              '#markup' => "<select id='translators' > <option>{$options}</option> </select> <button role='button' id='addtranslator'>Add This</button> <div id='bookswrapper'></div>"
+            //  '#markup' => "<select id='translators' > <option>{$options}</option> </select> <button role='button' id='addtranslator'>Add This</button> <div id='bookswrapper'></div>"
+                '#markup' => '<div id="selectbuttonswrapper">' . implode($buttons, ' ' ). '</div><div id=\'bookswrapper\'></div>'
             );
     }
     return $block;
