@@ -11,7 +11,7 @@
     border: 2px black solid;
     border-radius: 2px;
     flex: 0 1 100%;
-    background-color: #ebd3ac;
+    background: rgb(227,236,207);
 }
 #bookswrapper .views-row {
     padding: 1em .6em 2em;
@@ -27,10 +27,11 @@
     line-height: 3em;
     height: 3em;
     height: 3em;
-    font-size: 2em;
+    font-size: 1.2vw;
     top:0;
-    background-color: #ebd3ac;
-
+    background: rgb(227,236,207);
+    background: linear-gradient(120deg, rgba(227,236,207,0.968207351299895) 0%, rgba(207,203,157,1) 100%);
+    text-align: left;
 }
 #bookswrapper  .vc-book-header .translator-name {
     margin-left: .4em;
@@ -41,6 +42,6 @@
 #bookswrapper .views-field-title {
     font-weight: bold;
 }
-#bookswrapper .view-header.affix {
-    top: 3px;
+#bookswrapper  .vc-book-header.affix {
+    border-bottom: 2px solid #cccccc;
 }
